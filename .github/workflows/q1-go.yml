@@ -1,5 +1,16 @@
 name: Go
 
+on:
+  push:
+    branches:
+      - "feature/**"
+    paths:
+      - "go/src/**"
+      - "go/Dockerfile"
+      - "go/.dockerignore"
+      - "go/go.mod"
+      - "go/go.sum"
+
 jobs:
   build:
     runs-on: ubuntu-latest
