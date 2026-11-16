@@ -19,7 +19,7 @@ func healthy(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, map[string]string{"status": "healthy"})
 }
 
-//teste c2
+//teste q3
 func main() {
 	http.HandleFunc("GET /hello", hello)
 	http.HandleFunc("GET /healthy", healthy)
